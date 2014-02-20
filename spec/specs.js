@@ -1,5 +1,14 @@
-describe('leapYear', function() {
-  it('is false for a year is not divisible by 4', function () {
-    leapYear(1999).should.equal(false);
+describe('factorial', function() {
+  
+  it('returns a 1 when you enter 0', function () {
+    factorial(0).should.equal(1);
+  });
+
+  it('returns a 1 when you enter 1', function () {
+    factorial(1).should.equal(1);
+  });
+
+  it('multiplies a number by all of the positive integers less than that number', function () {
+    factorial(5).should.equal(120);
   });
 });
