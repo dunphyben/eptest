@@ -6,6 +6,21 @@ var factorial = function(number) {
   };
 };
 
+
+var fibonacci = function(number) {
+  if(number === 1){
+    return 0;
+  } else if(number === 2){
+      return 1;
+  } else if(number === 3){
+    return 1;
+  } else {
+    return fibonacci(number-1)+fibonacci(number-2);
+  }
+};
+
+
+
 $(function() {
   $('form#factorial').submit(function(event) {
     var number = $('#input-number').val();
